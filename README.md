@@ -2,7 +2,8 @@
 
 - [Paper](https://arxiv.org/abs/2408.06266#) 
 - [Blogpost](https://contextual.ai/addressing-underspecification-in-language-model-alignment)
-- Data & Models: coming soon.
+- [Data](https://huggingface.co/collections/ContextualAI/clair-and-apo-66b52868672bb1c984d1f3d5)
+- Models: coming soon.
 
 Alignment is underspecified with regard to preferences and training objective. We tackle this along two predominant axes: alignment data and alignment algorithms. 
 
