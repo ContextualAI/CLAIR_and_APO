@@ -5,10 +5,10 @@
 - [Data](https://huggingface.co/collections/ContextualAI/clair-and-apo-66b52868672bb1c984d1f3d5)
 - Models: coming soon.
 
-Alignment is underspecified with regard to preferences and training objective. We tackle this along two predominant axes: alignment data and alignment algorithms. 
+Alignment is underspecified with regard to preference and training objectives. We tackle this along two predominant axes: alignment data and alignment algorithms. 
 
 
-First, we introduce **Contrastive Learning from AI Revisions (CLAIR)**. CLAIR uses a secondary AI system to minimally revise a solution A→A’ such that the resulting preference A < A’ is much more contrastive and precise
+First, we introduce **Contrastive Learning from AI Revisions (CLAIR)**. CLAIR uses a secondary AI system to minimally revise a solution A→A’ such that the resulting preference A < A’ is much more contrastive and precise.
 
 Second, we introduce **Anchored Preference Optimization (APO)**. APO uses simple constraints during training to account for the relationship between the model and preference data.
 
@@ -25,7 +25,7 @@ Second, we introduce **Anchored Preference Optimization (APO)**. APO uses simple
   </div>
 </div>
 
-**A:** Preference pairs can vary along irrelevant aspects, Contrastive Learning from AI Revisions (CLAIR) creates a targeted preference signal instead. 
+**A:** Preference pairs can vary along irrelevant axes, Contrastive Learning from AI Revisions (CLAIR) creates a targeted preference signal instead. 
 **B:** The quality of the model can impact alignment training, Anchored Preference Optimization (APO) explicitly accounts for this.
 
 Compared to conventional methods, we’ve observed a ~2x performance boost on [MixEval-Hard](https://mixeval.github.io) for continued alignment of Llama-3-8B-Instruct.
@@ -35,7 +35,7 @@ Compared to conventional methods, we’ve observed a ~2x performance boost on [M
 </div>
 
 ## Contrastive Learning From AI Revisions (CLAIR)
-We've given a referecence implementation of CLAIR in this notebook. Results are cached, you can run it without an API key.
+We've given a reference implementation of CLAIR in this notebook. Results are cached so you can run it without an API key.
 
 
 ## Anchored Preference Optimization (APO)
