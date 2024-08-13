@@ -2,8 +2,11 @@
 
 - [Paper](https://arxiv.org/abs/2408.06266#) 
 - [Blogpost](https://contextual.ai/addressing-underspecification-in-language-model-alignment)
-- [Data](https://huggingface.co/collections/ContextualAI/clair-and-apo-66b52868672bb1c984d1f3d5)
+- [Data on HuggingFace](https://huggingface.co/collections/ContextualAI/clair-and-apo-66b52868672bb1c984d1f3d5)
+- [Data Notebook](https://colab.research.google.com/github/ContextualAI/CLAIR_and_APO/blob/master/CLAIR_preferences.ipynb)
 - Models: coming soon.
+
+
 
 Alignment is underspecified with regard to preference and training objectives. We tackle this along two predominant axes: alignment data and alignment algorithms. 
 
@@ -35,8 +38,9 @@ Compared to conventional methods, we’ve observed a ~2x performance boost on [M
 </div>
 
 ## Contrastive Learning From AI Revisions (CLAIR)
-We've given a reference implementation of CLAIR in this notebook. Results are cached so you can run it without an API key.
+We've given a reference implementation of CLAIR in [this notebook](https://github.com/ContextualAI/CLAIR_and_APO/blob/master/CLAIR_preferences.ipynb). Results are cached so you can run it without an API key.
 
+[![Open in Colab](https://img.shields.io/badge/Open%20in%20Colab-%E2%9C%94-brightgreen)](https://colab.research.google.com/github/ContextualAI/CLAIR_and_APO/blob/master/CLAIR_preferences.ipynb)
 
 ## Anchored Preference Optimization (APO)
 We're integrating APO in the TRL library, more information coming soon.
