@@ -43,7 +43,19 @@ We've given a reference implementation of CLAIR in [this notebook](https://githu
 [![Open in Colab](https://img.shields.io/badge/Open%20in%20Colab-%E2%9C%94-brightgreen)](https://colab.research.google.com/github/ContextualAI/CLAIR_and_APO/blob/master/CLAIR_preferences.ipynb)
 
 ## Anchored Preference Optimization (APO)
-We're integrating APO in the TRL library, more information coming soon.
+APO is integrated in the [TRL repository](https://github.com/huggingface/trl).
+First, install trl. Then, run either APO-zero (`apo_zero`) or APO-down (`apo_down`) using the `trl dpo` command.
+
+``` 
+pip install git+https://github.com/huggingface/trl.git
+``` 
+``` 
+trl dpo \
+    --loss_type apo_zero \
+    --dataset_name ContextualAI/ultrafeedback_clair_32k \
+	--model_name_or_path facebook/opt-125m \
+    --output_dir results
+```
 
 ## Citation
 If you found CLAIR and APO useful, please cite:
