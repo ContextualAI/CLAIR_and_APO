@@ -53,7 +53,7 @@ pip install git+https://github.com/huggingface/trl.git
 trl dpo \
     --loss_type apo_zero \
     --dataset_name ContextualAI/ultrafeedback_clair_32k \
-	--model_name_or_path facebook/opt-125m \
+    --model_name_or_path facebook/opt-125m \
     --output_dir results
 ```
 
