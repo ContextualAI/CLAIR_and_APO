@@ -56,6 +56,14 @@ trl dpo \
     --model_name_or_path facebook/opt-125m \
     --output_dir results
 ```
+Unpaired APO (similar to KTO), coming soon to TRL
+``` 
+trl kto \
+    --loss_type apo_zero_unpaired \
+    --dataset_name ContextualAI/ultrafeedback_clair_32k \
+    --model_name_or_path facebook/opt-125m \
+    --output_dir results
+```
 
 ## Citation
 If you found CLAIR and APO useful, please cite:
